@@ -122,10 +122,16 @@ p "###############################################################"
 
 # 14) get top 10 countries by full country name who have won the most gold medals in descending order
 p "Solution for 14"
+<<<<<<< Updated upstream
 db.execute("SELECT COUNT ( * ) AS medal, country FROM olympicMedals INNER JOIN dictionary ON olympicMedals.country=code.country GROUP BY code ORDER BY medal DESC LIMIT 10"
   ) do |row|
     p row
   end
+=======
+
+
+
+>>>>>>> Stashed changes
 p "###############################################################"
 
 # 15) get top 10 countries by full country name and population, where the name is not null, that have won the most gold medals in descending order
